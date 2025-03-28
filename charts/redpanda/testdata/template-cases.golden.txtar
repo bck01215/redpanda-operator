@@ -965,6 +965,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -1376,7 +1377,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -1402,6 +1402,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -2304,6 +2305,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -2508,7 +2510,6 @@ spec:
         app.kubernetes.io/name: redpanda
         testlabel: exercise_common_labels_template
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -2530,6 +2531,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -3495,6 +3497,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -3906,7 +3909,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -3932,6 +3934,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -4908,6 +4911,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -5127,7 +5131,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -5163,6 +5166,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -6222,6 +6226,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -6651,7 +6656,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -6691,6 +6695,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -7829,6 +7834,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -8243,7 +8249,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -8269,6 +8274,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -9388,6 +9394,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -9904,7 +9911,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -9932,6 +9938,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -10802,6 +10809,7 @@ spec:
           requiredDuringSchedulingIgnoredDuringExecution:
           - labelSelector:
               matchLabels:
+                app.kubernetes.io/component: redpanda-statefulset
                 app.kubernetes.io/instance: redpanda
                 app.kubernetes.io/name: redpanda
             topologyKey: kubernetes.io/hostname
@@ -10950,6 +10958,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -11361,7 +11370,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -11387,6 +11395,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -12461,6 +12470,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -12951,7 +12961,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -12977,6 +12986,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -13992,6 +14002,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -14407,7 +14418,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -14433,6 +14443,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -15541,6 +15552,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -15970,7 +15982,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -16010,6 +16021,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -17028,6 +17040,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -17344,7 +17357,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -17370,6 +17382,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -18472,6 +18485,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -18788,7 +18802,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -18814,6 +18827,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -19746,6 +19760,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -19975,7 +19990,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -19997,6 +20011,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -21004,6 +21019,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -21447,7 +21463,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -21473,6 +21488,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -22688,6 +22704,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -23099,7 +23116,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -23125,6 +23141,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -24143,6 +24160,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -24554,7 +24572,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -24580,6 +24597,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -25595,6 +25613,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -26010,7 +26029,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -26036,6 +26054,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -27106,6 +27125,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -27532,7 +27552,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -27560,6 +27579,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -28631,6 +28651,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -29057,7 +29078,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -29085,6 +29105,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -30154,6 +30175,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -30581,7 +30603,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -30609,6 +30630,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -31629,6 +31651,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -32056,7 +32079,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -32082,6 +32104,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -33154,6 +33177,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -33597,7 +33621,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -33625,6 +33648,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -34698,6 +34722,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -35141,7 +35166,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -35169,6 +35193,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -36240,6 +36265,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -36685,7 +36711,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -36713,6 +36738,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -37735,6 +37761,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -38180,7 +38207,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -38206,6 +38232,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -39278,6 +39305,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -39721,7 +39749,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -39749,6 +39776,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -40822,6 +40850,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -41265,7 +41294,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -41293,6 +41321,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -42364,6 +42393,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -42809,7 +42839,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -42837,6 +42866,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -43859,6 +43889,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -44304,7 +44335,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -44330,6 +44360,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -45345,6 +45376,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -45756,7 +45788,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -45782,6 +45813,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -46798,6 +46830,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -47209,7 +47242,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -47235,6 +47267,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -48148,9 +48181,6 @@ spec:
             - -c
             - curl --silent --fail -k -m 5 --cacert /etc/tls/certs/default/ca.crt
               "https://${SERVICE_NAME}.redpanda.default.svc.cluster.local.:9644/v1/status/ready"
-          failureThreshold: 3
-          initialDelaySeconds: 10
-          periodSeconds: 10
         name: redpanda
         ports:
         - containerPort: 9644
@@ -48185,9 +48215,6 @@ spec:
               RESULT=$(curl --silent --fail -k -m 5 --cacert /etc/tls/certs/default/ca.crt "https://${SERVICE_NAME}.redpanda.default.svc.cluster.local.:9644/v1/status/ready")
               echo $RESULT
               echo $RESULT | grep ready
-          failureThreshold: 120
-          initialDelaySeconds: 1
-          periodSeconds: 10
         volumeMounts:
         - mountPath: /etc/tls/certs/default
           name: redpanda-default-cert
@@ -48230,14 +48257,9 @@ spec:
         image: docker.redpanda.com/redpandadata/redpanda-operator:v2.3.8-24.3.6
         name: sidecar
         readinessProbe:
-          failureThreshold: 3
           httpGet:
             path: /healthz
             port: 8093
-          initialDelaySeconds: 1
-          periodSeconds: 10
-          successThreshold: 1
-          timeoutSeconds: 0
         resources: {}
         securityContext: {}
         volumeMounts:
@@ -48250,6 +48272,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -48661,7 +48684,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -48687,6 +48709,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -49793,6 +49816,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -50204,7 +50228,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -50230,6 +50253,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -51114,9 +51138,6 @@ spec:
                 app.kubernetes.io/component: redpanda-statefulset
                 app.kubernetes.io/instance: redpanda
                 app.kubernetes.io/name: redpanda
-                redpanda.com/testing: "true"
-                redpanda.com/testing-samples: sample
-                redpanda.com/testing-samples-two: two
             topologyKey: kubernetes.io/hostname
       automountServiceAccountToken: false
       containers:
@@ -51263,6 +51284,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -51364,9 +51386,6 @@ spec:
             app.kubernetes.io/component: redpanda-statefulset
             app.kubernetes.io/instance: redpanda
             app.kubernetes.io/name: redpanda
-            redpanda.com/testing: "true"
-            redpanda.com/testing-samples: sample
-            redpanda.com/testing-samples-two: two
         maxSkew: 1
         topologyKey: topology.kubernetes.io/zone
         whenUnsatisfiable: ScheduleAnyway
@@ -51677,7 +51696,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -51703,6 +51721,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -54537,6 +54556,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -54986,7 +55006,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -55012,6 +55031,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -56035,6 +56055,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -56446,7 +56467,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -56472,6 +56492,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -57487,6 +57508,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -57902,7 +57924,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -57928,6 +57949,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -58803,7 +58825,6 @@ spec:
                 app.kubernetes.io/component: redpanda-statefulset
                 app.kubernetes.io/instance: redpanda
                 app.kubernetes.io/name: redpanda
-                test: test
             topologyKey: kubernetes.io/hostname
       automountServiceAccountToken: false
       containers:
@@ -58950,6 +58971,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -59051,7 +59073,6 @@ spec:
             app.kubernetes.io/component: redpanda-statefulset
             app.kubernetes.io/instance: redpanda
             app.kubernetes.io/name: redpanda
-            test: test
         maxSkew: 1
         topologyKey: topology.kubernetes.io/zone
         whenUnsatisfiable: ScheduleAnyway
@@ -59393,7 +59414,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -59419,6 +59439,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -60443,6 +60464,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -60890,7 +60912,6 @@ spec:
             cpu: 200m
           requests:
             cpu: 2
-        securityContext: {}
         volumeMounts:
         - mountPath: /etc/tls/certs/default
           name: redpanda-default-cert
@@ -60900,6 +60921,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -63824,7 +63846,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -64670,6 +64691,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -65188,7 +65210,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -65216,6 +65237,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -66235,6 +66257,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -66590,7 +66613,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -66616,6 +66638,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -67779,6 +67802,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -68208,7 +68232,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -68250,6 +68273,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -69317,6 +69341,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -69728,7 +69753,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -69756,6 +69780,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -70776,6 +70801,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -71187,7 +71213,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -71218,6 +71243,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -72261,6 +72287,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -72701,7 +72728,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -72727,6 +72753,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -76668,6 +76695,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -77079,7 +77107,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -77105,6 +77132,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -79899,6 +79927,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - args:
         - -c
@@ -80383,7 +80412,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -80433,6 +80461,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -80459,19 +80488,14 @@ spec:
           name: config
         - mountPath: /tmp/base-config/
           name: base-config
-      nodeSelector:
-        cloud.redpanda.com/role: redpanda
+      nodeSelector: {}
       restartPolicy: Never
       securityContext:
         fsGroup: 101
         fsGroupChangePolicy: OnRootMismatch
         runAsUser: 101
       serviceAccountName: someaccountname
-      tolerations:
-      - effect: NoSchedule
-        key: cloud.redpanda.com/role
-        operator: Equal
-        value: redpanda
+      tolerations: []
       volumes:
       - name: redpanda-default-cert
         secret:
@@ -81471,6 +81495,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -81882,7 +81907,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -81908,6 +81932,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -83014,6 +83039,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -83443,7 +83469,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -83483,6 +83508,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -84525,6 +84551,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -84936,7 +84963,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -84962,6 +84988,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -86025,6 +86052,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -86436,7 +86464,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -86464,6 +86491,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -87484,6 +87512,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -87898,7 +87927,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -87924,6 +87952,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -88951,6 +88980,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -89362,7 +89392,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -89388,6 +89417,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -90451,6 +90481,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -90862,7 +90893,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -90890,6 +90920,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -91910,6 +91941,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -92324,7 +92356,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -92350,6 +92381,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -93365,6 +93397,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -93776,7 +93809,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -93802,6 +93834,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -94865,6 +94898,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -95276,7 +95310,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -95304,6 +95337,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -96324,6 +96358,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -96738,7 +96773,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -96764,6 +96798,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -97779,6 +97814,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -98190,7 +98226,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -98216,6 +98251,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -99279,6 +99315,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -99690,7 +99727,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -99718,6 +99754,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -100738,6 +100775,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -101152,7 +101190,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -101178,6 +101215,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -102194,6 +102232,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -102605,7 +102644,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -102631,6 +102669,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -103695,6 +103734,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -104106,7 +104146,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -104134,6 +104173,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -105155,6 +105195,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -105569,7 +105610,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -105595,6 +105635,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -106611,6 +106652,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -107022,7 +107064,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -107048,6 +107089,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -108112,6 +108154,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -108523,7 +108566,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -108551,6 +108593,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -109572,6 +109615,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -109986,7 +110030,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -110012,6 +110055,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -111027,6 +111071,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -111244,7 +111289,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -111270,6 +111314,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -112291,6 +112336,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -112508,7 +112554,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -112534,6 +112579,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -113765,6 +113811,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -114176,7 +114223,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -114202,6 +114248,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -115293,6 +115340,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -115722,7 +115770,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -115762,6 +115809,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -116788,6 +116836,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -117199,7 +117248,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -117225,6 +117273,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -118453,6 +118502,7 @@ spec:
           name: redpanda-external-cert
         - mountPath: /etc/redpanda
           name: config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -118846,7 +118896,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -118872,6 +118921,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -120001,9 +120051,6 @@ spec:
             - -c
             - curl --silent --fail -k -m 5 --cacert /etc/tls/certs/default/ca.crt
               "https://${SERVICE_NAME}.redpanda.default.svc.cluster.local.:9644/v1/status/ready"
-          failureThreshold: 3
-          initialDelaySeconds: 10
-          periodSeconds: 10
         name: redpanda
         ports:
         - containerPort: 9644
@@ -120038,9 +120085,6 @@ spec:
               RESULT=$(curl --silent --fail -k -m 5 --cacert /etc/tls/certs/default/ca.crt "https://${SERVICE_NAME}.redpanda.default.svc.cluster.local.:9644/v1/status/ready")
               echo $RESULT
               echo $RESULT | grep ready
-          failureThreshold: 120
-          initialDelaySeconds: 1
-          periodSeconds: 10
         volumeMounts:
         - mountPath: /etc/tls/certs/default
           name: redpanda-default-cert
@@ -120083,14 +120127,9 @@ spec:
         image: docker.redpanda.com/redpandadata/redpanda-operator:v2.3.8-24.3.6
         name: sidecar
         readinessProbe:
-          failureThreshold: 3
           httpGet:
             path: /healthz
             port: 8093
-          initialDelaySeconds: 1
-          periodSeconds: 10
-          successThreshold: 1
-          timeoutSeconds: 0
         resources: {}
         securityContext: {}
         volumeMounts:
@@ -120100,11 +120139,11 @@ spec:
           name: redpanda-external-cert
         - mountPath: /etc/redpanda
           name: config
-      - env: []
-        name: redpanda-controllers
+      - name: redpanda-controllers
         volumeMounts:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access-overwrite
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -120516,7 +120555,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -120542,6 +120580,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -121616,6 +121655,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -122088,7 +122128,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -122114,6 +122153,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -123219,6 +123259,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -123634,7 +123675,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -123660,6 +123700,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -124765,6 +124806,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -125180,7 +125222,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -125206,6 +125247,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -126351,6 +126393,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -126796,7 +126839,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -126822,6 +126864,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -127856,6 +127899,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -128397,7 +128441,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -128425,6 +128468,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -129444,6 +129488,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -129855,7 +129900,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: not-redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -129881,6 +129925,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -130896,6 +130941,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -131307,7 +131353,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -131333,6 +131378,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -132348,6 +132394,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -132790,7 +132837,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -132816,6 +132862,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -133816,6 +133863,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -134254,7 +134302,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -134280,6 +134327,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -135400,6 +135448,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -135895,7 +135944,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -135940,6 +135988,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -136958,6 +137007,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -137369,7 +137419,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -137395,6 +137444,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -138458,6 +138508,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -138869,7 +138920,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -138897,6 +138947,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -139917,6 +139968,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -140331,7 +140383,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -140357,6 +140408,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -141373,6 +141425,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -141784,7 +141837,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -141810,6 +141862,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -142874,6 +142927,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -143285,7 +143339,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -143313,6 +143366,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -144334,6 +144388,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -144748,7 +144803,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -144774,6 +144828,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -145796,6 +145851,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -146236,7 +146292,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -146262,6 +146317,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
@@ -147277,6 +147333,7 @@ spec:
         - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
           name: kube-api-access
           readOnly: true
+      imagePullSecrets: []
       initContainers:
       - command:
         - /bin/bash
@@ -147688,7 +147745,6 @@ spec:
         app.kubernetes.io/instance: redpanda
         app.kubernetes.io/name: redpanda
     spec:
-      affinity: {}
       automountServiceAccountToken: false
       containers:
       - command:
@@ -147714,6 +147770,7 @@ spec:
           name: config
         - mountPath: /tmp/base-config
           name: base-config
+      imagePullSecrets: []
       initContainers:
       - command:
         - /redpanda-operator
